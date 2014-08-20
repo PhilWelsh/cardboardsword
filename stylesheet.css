@@ -1,0 +1,155 @@
+﻿.sizefull {
+  height: 100%;
+  width: 100%; }
+
+.widthfull {
+  width: 100%; }
+
+.width-600 {
+  width: 600px; }
+
+.width-400 {
+  width: 400px; }
+
+.pad-em-2 {
+  padding: 2em; }
+
+.margin {
+  margin: auto; }
+
+.nomargin {
+  margin: 0; }
+
+.textcenter {
+  text-align: center; }
+
+.centerdiv {
+  width: auto;
+  text-align: center; }
+  .centerdiv ul {
+    width: auto;
+    padding: 0;
+    margin: auto;
+    line-height: 1.4; }
+    .centerdiv ul li {
+      display: inline;
+      text-align: center; }
+
+.page {
+  transition: all 1s ease-in-out; }
+
+.back-cbs {
+  background-color: #040d0f; }
+
+::selection {
+  color: black;
+  background: gray; }
+
+body {
+  padding: 0;
+  margin: 0;
+  color: gray;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
+  body ul {
+    padding: 0;
+    margin: 0; }
+  body li {
+    list-style: none;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-transform: capitalize;
+    font-size: 0.8em; }
+  body h1, body h2, body h3, body h5 {
+    font-family: bluehighwaybold; }
+  body h4 {
+    margin: 5px 0; }
+  body h1 {
+    font-size: 8em; }
+  body h2 {
+    font-size: 4em; }
+  body h5 {
+    font-size: 1.2em; }
+  body p {
+    font-family: bluehighway; }
+  body a, body a:visited, body a:hover, body a:active {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out; }
+
+.back-dark {
+  background-color: rgba(2, 9, 10, 0.95); }
+
+.w {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2NkYGAwBuKzQAwC9UA8C4ifQ/n/GaEMkCIfIG6E8iWB9DMgZoQpAOncgmTSfyBbCmQSSAFIEqYTZNIZkE6YSSAGyDi4nUC2CbKb4CphdqK7CaYAbieSb8BuAikASSKblIbsJgCKXBfTNjWx1AAAAABJRU5ErkJggg==
+   ) repeat; }
+
+.x {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2NkQIB6ILMRiY/MrGeE8v4DaWxsuGKYJA6DwMJgm9AVwkzGsAGkEFkQp8noJsI8BNMM9yC6B3CaTsgzcJNxeQYjTGEKsQU2is8Br60UCJVFWAoAAAAASUVORK5CYII=
+) repeat; }
+
+.y {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV4XQUQoAIAgD0Dx5efKyyChTt+/HBqOCU4U0Am4hBA8SyFHjg+aqBz/kQRdZGKIbpkghRAr7/oqzTwe1iRKJ6T+77wAAAABJRU5ErkJggg==
+) repeat; }
+
+.z {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAQElEQVQYV3WO0QoAIAgD25dLX27bg1Kmggje4cTqy7jebEfDE5KhCg+kYLfwQcWE0ELFSxhhCJpe5PxdF0Yo6wDNXROHjeoYnwAAAABJRU5ErkJggg==
+       ) repeat; }
+
+body {
+  /*.textbox{background-color: #1A1A1A;
+            -webkit-box-shadow: inset 0px 0px 15px 8px rgba(0,0,0,0.75);
+                 border: 2px solid rgb(116, 116, 116);border-left:0;border-right:0;
+            h5{}
+            p{text-align:left;}
+        }data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGD4D8RwwAhk1aMLIPMZMFQAAF5yAgLK6Gk1AAAAAElFTkSuQmCC
+*/
+  /*.textbox{border-radius:15px;
+                 border:3px solid gray;
+                   /*border-bottom:0;background: linear-gradient(
+    to bottom,
+    rgb(7, 21, 22),
+    #202427 35px,
+    rgb(128, 128, 128) 35px,
+    rgb(128, 128, 128) 37px ,
+    rgb(3,9,10) 10%,
+    #202427
+  );*/ }
+  body .main {
+    min-height: 100%;
+    border-bottom: 2px solid gray; }
+  body .container {
+    max-width: 80%;
+    -webkit-box-shadow: 0px 1px 10px 0px #323232;
+    border-radius: 7px; }
+  body .logo img {
+    width: 450px;
+    max-width: 100%; }
+  body .soc-med a {
+    display: inline-block; }
+    body .soc-med a img {
+      width: 60px; }
+  body .textbox {
+    background-color: #181818;
+    -webkit-box-shadow: inset 0px 0px 15px 8px rgba(0, 0, 0, 0.75);
+    border: 2px solid #4a4a4a;
+    border-left: 0;
+    border-right: 0; }
+    body .textbox .stripes {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAHUlEQVQYV2NkIBIwEqmOAaSwnhjFJJlIjIFDwmoA9sYBh5WOeYcAAAAASUVORK5CYII=   ) repeat; }
+    body .textbox .text {
+      margin: 30px auto; }
+      body .textbox .text h5 {
+        margin: 5px 0; }
+      body .textbox .text p {
+        margin: 10px 10px;
+        text-align: left; }
+  body .text {
+    max-width: 100%; }
+  body .footer p {
+    margin: 0;
+    padding: 10px;
+    border-top: 2px solid #4a4a4a; }
+
+@media only screen and (max-width: 400px) { }
+
+/*# sourceMappingURL=stylesheet.css.map */
