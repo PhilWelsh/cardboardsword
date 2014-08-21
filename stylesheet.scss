@@ -38,7 +38,7 @@
   $fast:all .5s ease-in-out;
   $faster:all .25s ease-in-out;
   //MIXINS
-  /*@mixin transition($speed) {
+  @mixin transition($speed) {
   -webkit-transition: $speed;
   -moz-transition: $speed;
   -ms-transition: $speed;
@@ -47,7 +47,7 @@
 }
   //JS ADDED CLASSES//
   .page{@include transition($slow);}
-    //*/
+    //
 
   //GENERAL RULES
   ::selection{color:black; background:gray;}
@@ -110,7 +110,17 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
         .logo{img{width:450px;max-width:100%;}
         }
         .soc-med a{display:inline-block;position:relative; img{width:60px;}}
-                .facebook,.twitter{&:hover:after{
+                .facebook,.twitter{
+                    &:after{content: "";
+position: absolute;
+top: 3px;
+left: 4px;
+height: 53px;
+width: 53px;
+border-radius: 35px;
+@include transition($faster);
+                    }
+                    &:hover:after{
 content: "";
 position: absolute;
 box-shadow: 0px 0px 25px #fff;
@@ -119,7 +129,8 @@ left: 4px;
 height: 53px;
 width: 53px;
 border-radius: 35px;
-        }}
+        }
+                }
         .email:hover{text-shadow: 0px 0px 10px #fff;}
                 
         /*.textbox{background-color: #1A1A1A;

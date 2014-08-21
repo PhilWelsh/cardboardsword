@@ -44,16 +44,13 @@
       display: inline;
       text-align: center; }
 
-/*@mixin transition($speed) {
-  -webkit-transition: $speed;
-  -moz-transition: $speed;
-  -ms-transition: $speed;
-  -o-transition: $speed;
-  transition: $speed;
-}
-  //JS ADDED CLASSES//
-  .page{@include transition($slow);}
-    //*/
+.page {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
 ::selection {
   color: black;
   background: gray; }
@@ -135,6 +132,19 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
   .soc-med a img {
     width: 60px; }
 
+.facebook:after, .twitter:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  height: 53px;
+  width: 53px;
+  border-radius: 35px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
 .facebook:hover:after, .twitter:hover:after {
   content: "";
   position: absolute;
