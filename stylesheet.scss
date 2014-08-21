@@ -6,8 +6,11 @@
 .width-600{width:600px;}
 .width-400{width:400px;}
 .pad-em-2{padding:2em;}
+.margin-bot-80{margin-bottom:80px;}
 .margin{margin:auto;}
 .nomargin{margin:0;}
+.pos-fix{position:fixed;}
+.pos-abs{position:absolute;}
 .textcenter{text-align:center;}
     .centerdiv {
         width:auto;
@@ -35,16 +38,33 @@
   $fast:all .5s ease-in-out;
   $faster:all .25s ease-in-out;
   //MIXINS
-
+  /*@mixin transition($speed) {
+  -webkit-transition: $speed;
+  -moz-transition: $speed;
+  -ms-transition: $speed;
+  -o-transition: $speed;
+  transition: $speed;
+}
   //JS ADDED CLASSES//
-  .page{transition:$slow;}
-    //
+  .page{@include transition($slow);}
+    //*/
 
   //GENERAL RULES
-  .back-cbs{background-color:rgb(4, 13, 15);}
   ::selection{color:black; background:gray;}
   body{padding:0; margin:0;
+       position:absolute;
+       height:100%;width:100%;
        color:gray;
+background-color: #020505;
+       /*background-color: #03090A;*/
+/*background-color:rgb(4, 13, 15);*/
+       #wrapper{min-height:100%; position:relative;
+background:url(
+       data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV4XQUQoAIAgD0Dx5efKyyChTt+/HBqOCU4U0Am4hBA8SyFHjg+aqBz/kQRdZGKIbpkghRAr7/oqzTwe1iRKJ6T+77wAAAABJRU5ErkJggg==
+) repeat;
+
+       }
+       
       //fonts
 
       font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -67,29 +87,41 @@
   //colors
   .back-dark{background-color:rgba(2, 9, 10, 0.95);}
 //background-color:rgb(7, 21, 22
-.w{background:url(
+/*.w{background:url(
        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2NkYGAwBuKzQAwC9UA8C4ifQ/n/GaEMkCIfIG6E8iWB9DMgZoQpAOncgmTSfyBbCmQSSAFIEqYTZNIZkE6YSSAGyDi4nUC2CbKb4CphdqK7CaYAbieSb8BuAikASSKblIbsJgCKXBfTNjWx1AAAAABJRU5ErkJggg==
    ) repeat;}
 
 .x{background:url(
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2NkQIB6ILMRiY/MrGeE8v4DaWxsuGKYJA6DwMJgm9AVwkzGsAGkEFkQp8noJsI8BNMM9yC6B3CaTsgzcJNxeQYjTGEKsQU2is8Br60UCJVFWAoAAAAASUVORK5CYII=
-) repeat;}
-.y{background:url(
+) repeat;}*/
+.diagstripe{background:url(
        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV4XQUQoAIAgD0Dx5efKyyChTt+/HBqOCU4U0Am4hBA8SyFHjg+aqBz/kQRdZGKIbpkghRAr7/oqzTwe1iRKJ6T+77wAAAABJRU5ErkJggg==
-) repeat;}
+) repeat;
+}
 
-.z{background:url(
+/*.z{background:url(
        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAQElEQVQYV3WO0QoAIAgD25dLX27bg1Kmggje4cTqy7jebEfDE5KhCg+kYLfwQcWE0ELFSxhhCJpe5PxdF0Yo6wDNXROHjeoYnwAAAABJRU5ErkJggg==
-       ) repeat;}
+       ) repeat;}*/
 
    //GENERAL RULES
-   body{
-       .main{min-height:100%;border-bottom:2px solid gray;}
+       .main{border-bottom:2px solid gray;}
         .container{max-width:80%;
                    -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);border-radius:7px;}
         .logo{img{width:450px;max-width:100%;}
         }
-        .soc-med a{display:inline-block; img{width:60px;}}
+        .soc-med a{display:inline-block;position:relative; img{width:60px;}}
+                .facebook,.twitter{&:hover:after{
+content: "";
+position: absolute;
+box-shadow: 0px 0px 25px #fff;
+top: 3px;
+left: 4px;
+height: 53px;
+width: 53px;
+border-radius: 35px;
+        }}
+        .email:hover{text-shadow: 0px 0px 10px #fff;}
+                
         /*.textbox{background-color: #1A1A1A;
             -webkit-box-shadow: inset 0px 0px 15px 8px rgba(0,0,0,0.75);
                  border: 2px solid rgb(116, 116, 116);border-left:0;border-right:0;
@@ -121,10 +153,14 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAHUlEQVQYV2
   );*/
         
         .text{max-width:100%;}
-        .footer{p{margin:0;padding:10px;
+        .footer{bottom:0;
+                height:40px;
+                .copyright{background-color: rgba(2, 9, 10, 0.95);
+            p{margin:0;padding:10px;
                   border-top:2px solid rgb(74,74,74);
                 }
+              }  
+
         }
-   }
   //WEBSITE START
 @media only screen and (max-width: 400px){}
