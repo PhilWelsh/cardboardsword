@@ -218,6 +218,19 @@
         opacity:1;
     }
 }
+
+@-webkit-keyframes starin {
+    0%   { opacity: 0; 
+        @include transform(rotate(-10deg));
+    }
+    33%{ opacity: .7;
+        @include transform(rotate(0deg));}
+    66%{ opacity: .4;
+        @include transform(rotate(10deg));}
+    100% { opacity: 0;
+        @include transform(rotate(20deg));}
+    }
+
 //MIXINS
 
 $slow: all 1s ease-in-out;
@@ -335,7 +348,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     margin: auto;
     @include animation-fill-mode(forwards);
     @include animation-duration(1s);
-    @include animation-delay(1.7s);
+    @include animation-delay(3.5s);
     @include animation-name(movescale);
 
     img {
@@ -357,8 +370,61 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
         position: absolute;
         @include animation-fill-mode(forwards);
         @include animation-duration(1s);
-        @include animation-delay(0s);
+        @include animation-delay(.8s);
         @include animation-name(slideout);
+    }
+
+    .star {
+        position: absolute;
+        top: 29%;
+        right: 15%;
+        width: 3px;
+        height: 3px;
+        background-color: white;
+        opacity: 0;
+        @include transform(rotate(40deg));
+        @include animation-fill-mode(forwards);
+        @include animation-duration(1.3s);
+        @include animation-delay(1.7s);
+        @include animation-name(starin);
+        -moz-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    #diamond {
+        width: 0;
+        height: 0;
+        border: 2px solid transparent;
+        border-bottom: 27px solid #fff;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #diamond:after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: 27px;
+        width: 0;
+        height: 0;
+        border: 2px solid transparent;
+        border-top: 27px solid #fff;
+    }
+
+    #diamond.side {
+        @include transform(rotate(90deg));
+left: 9px;
+top: -7px;
+border-bottom: 16px solid #fff;
+    }
+
+    #diamond.side:after {
+        @include transform(rotate(0deg));
+        border-top: 16px solid #fff;
+        top: 16px;
+        left: -2px;
     }
 }
 
@@ -372,10 +438,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);
     border-radius: 7px;
     position: absolute;
-left: 0;
-right: 0;
-top: 0;
-height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: auto;
 }
 
 .logo {
@@ -393,7 +459,7 @@ height: auto;
     opacity:0;
         @include animation-fill-mode(forwards);
         @include animation-duration(.5s);
-        @include animation-delay(3.5s);
+        @include animation-delay(4.8s);
         @include animation-name(fadein);
         margin-top: 50px;
      a {
@@ -465,7 +531,7 @@ height: auto;
         @include transition(all 1s);
         @include animation-fill-mode(forwards);
         @include animation-duration(2s);
-        @include animation-delay(1.8s);
+        @include animation-delay(5.5s);
         @include animation-name(open);
     }
 
@@ -601,7 +667,7 @@ height: auto;
     bottom: 52px;
     @include animation-fill-mode(forwards);
     @include animation-duration(1.2s);
-    @include animation-delay(.7s);
+    @include animation-delay(1.7s);
 }
 
 .mask a:hover ~ .glint {
