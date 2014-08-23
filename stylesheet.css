@@ -618,18 +618,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     left: 78px; }
 
   to {
-    left: 400px; }
-
-  @media only screen and (max-width: 400px) { } }
-
-.shimmer {
-  content: "";
-  background-image: url(/cbs_crop_blade_shine.png);
-  background-size: 100%;
-  -webkit-transition: background-position 0s ease;
-  -moz-transition: background-position 0s ease;
-  -o-transition: background-position 0s ease;
-  transition: background-position 0s ease; }
+    left: 400px; } }
 
 .hideshimmer {
   overflow: hidden;
@@ -655,7 +644,8 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
   animation-name: hideshimmer; }
 
 .shimmer {
-  overflow: hidden;
+  background-image: url(/cbs_crop_blade_shine.png);
+  background-size: 100%;
   position: relative;
   top: 2%;
   left: -225%;

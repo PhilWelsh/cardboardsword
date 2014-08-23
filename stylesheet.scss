@@ -741,21 +741,11 @@ border-bottom: 16px solid #fff;
     to {
         left: 400px;
     }
-    //WEBSITE START
-    @media only screen and (max-width: 400px) {
-    }
 }
 
+    //WEBSITE START
 //TESTING FOR SHINE EFFECT//
-.shimmer{
-  content:"";
-    background-image:url(/cbs_crop_blade_shine.png);
-         background-size:100%;
-    -webkit-transition:background-position 0s ease;
-       -moz-transition:background-position 0s ease;       
-         -o-transition:background-position 0s ease;
-            transition:background-position 0s ease;
-}
+
 
 .hideshimmer{
 overflow: hidden;
@@ -770,13 +760,16 @@ width: 5%;
     @include animation-delay(1.6s);
     @include animation-name(hideshimmer);
 }
+
     .shimmer{
-overflow: hidden;
-position: relative;
-top: 2%;
-left: -225%;
-height: 100%;
-width: 2000%;
+    background-image:url(/cbs_crop_blade_shine.png);
+    background-size:100%;
+
+    position: relative;
+    top: 2%;
+    left: -225%;
+    height: 100%;
+    width: 2000%;
     @include animation-fill-mode(forwards);
     @include animation-duration(0.7s);
     @include animation-delay(1.6s);
