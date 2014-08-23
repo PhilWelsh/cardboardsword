@@ -755,23 +755,38 @@ left: -7%;
 height: 100%;
 width: 5%;
 
-    @include animation-fill-mode(forwards);
+    /*@include animation-fill-mode(forwards);
     @include animation-duration(0.7s);
     @include animation-delay(1.6s);
-    @include animation-name(hideshimmer);
+    @include animation-name(hideshimmer);*/
 }
 
     .shimmer{
     background-image:url(/cbs_crop_blade_shine.png);
     background-size:100%;
 
+
     position: relative;
     top: 2%;
     left: -225%;
     height: 100%;
     width: 2000%;
-    @include animation-fill-mode(forwards);
+    /*@include animation-fill-mode(forwards);
     @include animation-duration(0.7s);
     @include animation-delay(1.6s);
+    @include animation-name(shimmer);*/
+    }
+
+
+        .sheath:hover .hideshimmer{
+            @include animation-fill-mode(forwards);
+    @include animation-duration(0.7s);
+    @include animation-delay(.1s);
+    @include animation-name(hideshimmer);
+    }
+    .sheath:hover .shimmer{
+    @include animation-fill-mode(forwards);
+    @include animation-duration(0.7s);
+    @include animation-delay(.1s);
     @include animation-name(shimmer);
     }

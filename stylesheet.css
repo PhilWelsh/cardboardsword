@@ -627,21 +627,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
   left: -7%;
   height: 100%;
   width: 5%;
-  -webkit-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.7s;
-  -moz-animation-duration: 0.7s;
-  -o-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-delay: 1.6s;
-  -moz-animation-delay: 1.6s;
-  -o-animation-delay: 1.6s;
-  animation-delay: 1.6s;
-  -webkit-animation-name: hideshimmer;
-  -moz-animation-name: hideshimmer;
-  -o-animation-name: hideshimmer;
-  animation-name: hideshimmer; }
+  /*@include animation-fill-mode(forwards);
+    @include animation-duration(0.7s);
+    @include animation-delay(1.6s);
+    @include animation-name(hideshimmer);*/ }
 
 .shimmer {
   background-image: url(/cbs_crop_blade_shine.png);
@@ -651,6 +640,12 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
   left: -225%;
   height: 100%;
   width: 2000%;
+  /*@include animation-fill-mode(forwards);
+    @include animation-duration(0.7s);
+    @include animation-delay(1.6s);
+    @include animation-name(shimmer);*/ }
+
+.sheath:hover .hideshimmer {
   -webkit-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -658,10 +653,27 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
   -moz-animation-duration: 0.7s;
   -o-animation-duration: 0.7s;
   animation-duration: 0.7s;
-  -webkit-animation-delay: 1.6s;
-  -moz-animation-delay: 1.6s;
-  -o-animation-delay: 1.6s;
-  animation-delay: 1.6s;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  -webkit-animation-name: hideshimmer;
+  -moz-animation-name: hideshimmer;
+  -o-animation-name: hideshimmer;
+  animation-name: hideshimmer; }
+
+.sheath:hover .shimmer {
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  -o-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  animation-delay: 0.1s;
   -webkit-animation-name: shimmer;
   -moz-animation-name: shimmer;
   -o-animation-name: shimmer;
