@@ -219,6 +219,65 @@
     }
 }
 
+@-webkit-keyframes hideshimmer {
+    from {
+        left: -4%;
+    }
+
+    to {
+        left: 85%;
+    }
+}
+
+@-moz-keyframes hideshimmer {
+    from {
+        left: -4%;
+    }
+
+    to {
+        left: 85%;
+    }
+}
+
+@keyframes hideshimmer {
+    from {
+        left: -4%;
+    }
+
+    to {
+        left: 85%;
+    }
+}
+@-webkit-keyframes shimmer {
+    from {
+        left: -215%;
+    }
+
+    to {
+        left: -2000%;
+    }
+}
+
+@-moz-keyframes shimmer {
+    from {
+        left: -215%;
+    }
+
+    to {
+        left: -2000%;
+    }
+}
+
+@keyframes shimmer {
+    from {
+        left: -215%;
+    }
+
+    to {
+        left: -2000%;
+    }
+}
+
 @-webkit-keyframes starin {
     0%   { opacity: 0; 
         @include transform(rotate(-10deg));
@@ -348,7 +407,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     margin: auto;
     @include animation-fill-mode(forwards);
     @include animation-duration(1s);
-    @include animation-delay(3.5s);
+    @include animation-delay(3.8s);
     @include animation-name(movescale);
 
     img {
@@ -370,7 +429,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
         position: absolute;
         @include animation-fill-mode(forwards);
         @include animation-duration(1s);
-        @include animation-delay(.8s);
+        @include animation-delay(.6s);
         @include animation-name(slideout);
     }
 
@@ -385,7 +444,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
         @include transform(rotate(40deg));
         @include animation-fill-mode(forwards);
         @include animation-duration(1.3s);
-        @include animation-delay(1.7s);
+        @include animation-delay(2.7s);
         @include animation-name(starin);
         -moz-animation-timing-function: linear;
         -o-animation-timing-function: linear;
@@ -459,7 +518,7 @@ border-bottom: 16px solid #fff;
     opacity:0;
         @include animation-fill-mode(forwards);
         @include animation-duration(.5s);
-        @include animation-delay(4.8s);
+        @include animation-delay(5s);
         @include animation-name(fadein);
         margin-top: 50px;
      a {
@@ -531,7 +590,7 @@ border-bottom: 16px solid #fff;
         @include transition(all 1s);
         @include animation-fill-mode(forwards);
         @include animation-duration(2s);
-        @include animation-delay(5.5s);
+        @include animation-delay(5.7s);
         @include animation-name(open);
     }
 
@@ -667,7 +726,7 @@ border-bottom: 16px solid #fff;
     bottom: 52px;
     @include animation-fill-mode(forwards);
     @include animation-duration(1.2s);
-    @include animation-delay(1.7s);
+    @include animation-delay(1.5s);
 }
 
 .mask a:hover ~ .glint {
@@ -686,3 +745,40 @@ border-bottom: 16px solid #fff;
     @media only screen and (max-width: 400px) {
     }
 }
+
+//TESTING FOR SHINE EFFECT//
+.shimmer{
+  content:"";
+    background-image:url(/cbs_crop_blade_shine.png);
+         background-size:100%;
+    -webkit-transition:background-position 0s ease;
+       -moz-transition:background-position 0s ease;       
+         -o-transition:background-position 0s ease;
+            transition:background-position 0s ease;
+}
+
+.hideshimmer{
+overflow: hidden;
+position: absolute;
+top: 0;
+left: -7%;
+height: 100%;
+width: 5%;
+
+    @include animation-fill-mode(forwards);
+    @include animation-duration(0.7s);
+    @include animation-delay(1.6s);
+    @include animation-name(hideshimmer);
+}
+    .shimmer{
+overflow: hidden;
+position: relative;
+top: 2%;
+left: -225%;
+height: 100%;
+width: 2000%;
+    @include animation-fill-mode(forwards);
+    @include animation-duration(0.7s);
+    @include animation-delay(1.6s);
+    @include animation-name(shimmer);
+    }

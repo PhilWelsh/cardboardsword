@@ -111,6 +111,48 @@
   to {
     opacity: 1; } }
 
+@-webkit-keyframes hideshimmer {
+  from {
+    left: -4%; }
+
+  to {
+    left: 85%; } }
+
+@-moz-keyframes hideshimmer {
+  from {
+    left: -4%; }
+
+  to {
+    left: 85%; } }
+
+@keyframes hideshimmer {
+  from {
+    left: -4%; }
+
+  to {
+    left: 85%; } }
+
+@-webkit-keyframes shimmer {
+  from {
+    left: -215%; }
+
+  to {
+    left: -2000%; } }
+
+@-moz-keyframes shimmer {
+  from {
+    left: -215%; }
+
+  to {
+    left: -2000%; } }
+
+@keyframes shimmer {
+  from {
+    left: -215%; }
+
+  to {
+    left: -2000%; } }
+
 @-webkit-keyframes starin {
   0% {
     opacity: 0;
@@ -234,10 +276,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
   -moz-animation-duration: 1s;
   -o-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 3.5s;
-  -moz-animation-delay: 3.5s;
-  -o-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 3.8s;
+  -moz-animation-delay: 3.8s;
+  -o-animation-delay: 3.8s;
+  animation-delay: 3.8s;
   -webkit-animation-name: movescale;
   -moz-animation-name: movescale;
   -o-animation-name: movescale;
@@ -263,10 +305,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     -moz-animation-duration: 1s;
     -o-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-delay: 0.8s;
-    -moz-animation-delay: 0.8s;
-    -o-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
     -webkit-animation-name: slideout;
     -moz-animation-name: slideout;
     -o-animation-name: slideout;
@@ -291,10 +333,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     -moz-animation-duration: 1.3s;
     -o-animation-duration: 1.3s;
     animation-duration: 1.3s;
-    -webkit-animation-delay: 1.7s;
-    -moz-animation-delay: 1.7s;
-    -o-animation-delay: 1.7s;
-    animation-delay: 1.7s;
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+    -o-animation-delay: 2.7s;
+    animation-delay: 2.7s;
     -webkit-animation-name: starin;
     -moz-animation-name: starin;
     -o-animation-name: starin;
@@ -367,10 +409,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
   -moz-animation-duration: 0.5s;
   -o-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  -webkit-animation-delay: 4.8s;
-  -moz-animation-delay: 4.8s;
-  -o-animation-delay: 4.8s;
-  animation-delay: 4.8s;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
   -webkit-animation-name: fadein;
   -moz-animation-name: fadein;
   -o-animation-name: fadein;
@@ -449,10 +491,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     -moz-animation-duration: 2s;
     -o-animation-duration: 2s;
     animation-duration: 2s;
-    -webkit-animation-delay: 5.5s;
-    -moz-animation-delay: 5.5s;
-    -o-animation-delay: 5.5s;
-    animation-delay: 5.5s;
+    -webkit-animation-delay: 5.7s;
+    -moz-animation-delay: 5.7s;
+    -o-animation-delay: 5.7s;
+    animation-delay: 5.7s;
     -webkit-animation-name: open;
     -moz-animation-name: open;
     -o-animation-name: open;
@@ -560,10 +602,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
   -moz-animation-duration: 1.2s;
   -o-animation-duration: 1.2s;
   animation-duration: 1.2s;
-  -webkit-animation-delay: 1.7s;
-  -moz-animation-delay: 1.7s;
-  -o-animation-delay: 1.7s;
-  animation-delay: 1.7s; }
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
 
 .mask a:hover ~ .glint {
   -webkit-animation-name: glint;
@@ -579,5 +621,60 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     left: 400px; }
 
   @media only screen and (max-width: 400px) { } }
+
+.shimmer {
+  content: "";
+  background-image: url(/cbs_crop_blade_shine.png);
+  background-size: 100%;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -o-transition: background-position 0s ease;
+  transition: background-position 0s ease; }
+
+.hideshimmer {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -7%;
+  height: 100%;
+  width: 5%;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  -o-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  -o-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+  -webkit-animation-name: hideshimmer;
+  -moz-animation-name: hideshimmer;
+  -o-animation-name: hideshimmer;
+  animation-name: hideshimmer; }
+
+.shimmer {
+  overflow: hidden;
+  position: relative;
+  top: 2%;
+  left: -225%;
+  height: 100%;
+  width: 2000%;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  -o-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  -o-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  -o-animation-name: shimmer;
+  animation-name: shimmer; }
 
 /*# sourceMappingURL=stylesheet.css.map */
