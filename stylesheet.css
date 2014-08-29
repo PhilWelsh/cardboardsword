@@ -72,7 +72,7 @@
 
   to {
     top: 30px;
-    width: 400px; } }
+    width: 500px; } }
 
 @-moz-keyframes movescale {
   from {
@@ -80,7 +80,7 @@
 
   to {
     top: 30px;
-    width: 400px; } }
+    width: 500px; } }
 
 @keyframes movescale {
   from {
@@ -88,7 +88,7 @@
 
   to {
     top: 30px;
-    width: 400px; } }
+    width: 500px; } }
 
 @-webkit-keyframes fadein {
   from {
@@ -385,8 +385,8 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
 
 .container {
   max-width: 70%;
-  box-shadow: 0px 1px 10px 0px #323232;
-  -webkit-box-shadow: 0px 1px 10px 0px #323232;
+  /*box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);*/
   border-radius: 7px;
   position: absolute;
   left: 0;
@@ -417,7 +417,8 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
   -moz-animation-name: fadein;
   -o-animation-name: fadein;
   animation-name: fadein;
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding-bottom: 30px; }
   .soc-med a {
     display: inline-block;
     position: relative; }
@@ -501,18 +502,24 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     animation-name: open; }
   .textbox:after {
     bottom: -2%;
-    border-top: 2px solid #4a4a4a; }
+    /*border-top: 2px solid #4a4a4a;*/
+    border-top: 2px solid white; }
   .textbox:before {
     top: -2%;
-    border-bottom: 2px solid #4a4a4a; }
+    /*border-bottom: 2px solid #4a4a4a;*/
+    border-bottom: 2px solid white; }
   .textbox .stripes {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAHUlEQVQYV2NkIBIwEqmOAaSwnhjFJJlIjIFDwmoA9sYBh5WOeYcAAAAASUVORK5CYII= ) repeat; }
   .textbox .text {
     margin: 30px auto; }
     .textbox .text h4 {
-      margin: 5px 0; }
+      padding-top: 20px;
+      max-width: 80%;
+      margin: 5px auto; }
     .textbox .text h5 {
-      text-align: left; }
+      text-align: left;
+      color: #6c43d2;
+      margin: 20px 0; }
     .textbox .text p {
       font-size: 15px;
       margin: 0;
@@ -521,6 +528,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
                   @include animation(slideIn ease-in 1);
                   @include animation-fill-mode( forwards);
                   @include animation-duration( .7s);*/ }
+    .textbox .text .provide {
+      padding: 20px 0;
+      max-width: 80%;
+      margin: auto; }
 
 /*.textbox{border-radius:15px;
                  border:3px solid gray;

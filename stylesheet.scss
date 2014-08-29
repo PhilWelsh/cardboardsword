@@ -163,7 +163,7 @@
 
     to {
         top: 30px;
-        width: 400px;
+        width: 500px;
     }
 }
 
@@ -174,7 +174,7 @@
 
     to {
         top: 30px;
-        width: 400px;
+        width: 500px;
     }
 }
 
@@ -185,7 +185,7 @@
 
     to {
         top: 30px;
-        width: 400px;
+        width: 500px;
     }
 }
 
@@ -493,8 +493,8 @@ border-bottom: 16px solid #fff;
 
 .container {
     max-width: 70%;
-    box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);
-    -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);
+    /*box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);*/
     border-radius: 7px;
     position: absolute;
     left: 0;
@@ -521,6 +521,7 @@ border-bottom: 16px solid #fff;
         @include animation-delay(5s);
         @include animation-name(fadein);
         margin-top: 50px;
+        padding-bottom:30px;
      a {
     display: inline-block;
     position: relative;
@@ -598,12 +599,14 @@ border-bottom: 16px solid #fff;
 
     &:after {
         bottom: -2%;
-        border-top: 2px solid #4a4a4a;
+        /*border-top: 2px solid #4a4a4a;*/
+        border-top: 2px solid white;
     }
 
     &:before {
         top: -2%;
-        border-bottom: 2px solid #4a4a4a;
+        /*border-bottom: 2px solid #4a4a4a;*/
+        border-bottom: 2px solid white;
     }
 
 
@@ -621,11 +624,15 @@ border-bottom: 16px solid #fff;
         margin: 30px auto;
 
         h4 {
-            margin: 5px 0;
+            padding-top:20px;
+            max-width: 80%;
+        margin:5px auto;
         }
 
         h5 {
             text-align: left;
+            color:#6c43d2;
+            margin: 20px 0;
         }
 
         p {
@@ -637,7 +644,12 @@ border-bottom: 16px solid #fff;
                   @include animation-fill-mode( forwards);
                   @include animation-duration( .7s);*/
         }
+    .provide{
+        padding:20px 0;
+        max-width: 80%;
+        margin: auto;
     }
+        }
 }
 
 
