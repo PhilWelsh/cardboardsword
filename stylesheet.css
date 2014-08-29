@@ -227,7 +227,7 @@ body {
     text-transform: capitalize;
     font-size: 0.8em; }
   body h4 {
-    margin: 5px 0; }
+    margin: 10px 0; }
   body h1 {
     font-size: 8em; }
   body h2 {
@@ -425,28 +425,38 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     .soc-med a img {
       width: 60px; }
 
-.facebook:after, .twitter:after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 4px;
-  height: 53px;
-  width: 53px;
-  border-radius: 35px;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out; }
-.facebook:hover:after, .twitter:hover:after {
-  content: "";
-  position: absolute;
-  box-shadow: 0px 0px 25px #fff;
-  top: 3px;
-  left: 4px;
-  height: 53px;
-  width: 53px;
-  border-radius: 35px; }
+.facebook {
+  background-image: url(facebook.png); }
+
+.twitter {
+  background-image: url(twitter.png); }
+
+.facebook, .twitter {
+  height: 50px;
+  width: 50px;
+  background-size: 50px; }
+  .facebook:after, .twitter:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    height: 43px;
+    width: 43px;
+    border-radius: 35px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+  .facebook:hover:after, .twitter:hover:after {
+    content: "";
+    position: absolute;
+    box-shadow: 0px 0px 25px #fff;
+    top: 3px;
+    left: 4px;
+    height: 43px;
+    width: 43px;
+    border-radius: 35px; }
 
 .email:hover {
   text-shadow: 0px 0px 10px #fff; }
@@ -512,14 +522,16 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAHUlEQVQYV2NkIBIwEqmOAaSwnhjFJJlIjIFDwmoA9sYBh5WOeYcAAAAASUVORK5CYII= ) repeat; }
   .textbox .text {
     margin: 30px auto; }
-    .textbox .text h4 {
-      padding-top: 20px;
+    .textbox .text .who {
+      padding: 10px 0;
       max-width: 80%;
-      margin: 5px auto; }
+      margin: 5px auto;
+      text-align: justify; }
     .textbox .text h5 {
       text-align: left;
       color: #6c43d2;
-      margin: 20px 0; }
+      margin: 20px 0;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
     .textbox .text p {
       font-size: 15px;
       margin: 0;
@@ -529,7 +541,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2
                   @include animation-fill-mode( forwards);
                   @include animation-duration( .7s);*/ }
     .textbox .text .provide {
-      padding: 20px 0;
+      padding-bottom: 20px;
       max-width: 80%;
       margin: auto; }
 
