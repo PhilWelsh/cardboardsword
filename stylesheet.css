@@ -202,8 +202,6 @@ body {
   width: 100%;
   color: gray;
   background-color: #020505;
-  /*background-color: #03090A;*/
-  /*background-color:rgb(4, 13, 15);*/
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
   body #wrapper {
     min-height: 100%;
@@ -248,14 +246,23 @@ body {
   top: 30px;
   z-index: 1;
   width: 600px;
+  height: 107px;
   max-width: 70%;
   right: 0;
   left: 0;
   margin: auto;
-  /*@include animation-fill-mode(forwards);
-    @include animation-duration(1.8s);
-    @include animation-delay(.3s);
-    @include animation-name(topin);*/ }
+  background-image: url(/cbs_crop_blade.png);
+  background-size: 100%; }
+  .opener:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/cbs_crop_hilt.png);
+    background-repeat: no-repeat;
+    background-size: 100%; }
   .opener img {
     height: 100%;
     width: 100%; }
@@ -341,8 +348,6 @@ body {
 
 .container {
   max-width: 70%;
-  /*box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);
-    -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 1);*/
   border-radius: 7px;
   position: absolute;
   left: 0;
@@ -358,10 +363,6 @@ body {
 
 .soc-med {
   opacity: 1;
-  /*@include animation-fill-mode(forwards);
-    @include animation-duration(3s);
-    @include animation-delay(4.8s);
-    @include animation-name(fadein);*/
   margin-top: 1%;
   padding-bottom: 30px; }
   .soc-med a {
@@ -458,11 +459,9 @@ body {
     animation-name: open; }
   .textbox:after {
     bottom: -2%;
-    /*border-top: 2px solid #4a4a4a;*/
     border-top: 2px solid white; }
   .textbox:before {
     top: -2%;
-    /*border-bottom: 2px solid #4a4a4a;*/
     border-bottom: 2px solid white; }
   .textbox .stripes {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAHUlEQVQYV2NkIBIwEqmOAaSwnhjFJJlIjIFDwmoA9sYBh5WOeYcAAAAASUVORK5CYII= ) repeat; }
@@ -480,27 +479,12 @@ body {
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
     .textbox .text p {
       margin: 0;
-      text-align: left;
-      /*                  @include transform(translateX(-100%));  make things offside upon start 
-                  @include animation(slideIn ease-in 1);
-                  @include animation-fill-mode( forwards);
-                  @include animation-duration( .7s);*/ }
+      text-align: left; }
     .textbox .text .provide {
       padding-bottom: 20px;
       max-width: 80%;
       margin: auto; }
 
-/*.textbox{border-radius:15px;
-                 border:3px solid gray;
-                   /*border-bottom:0;background: linear-gradient(
-    to bottom,
-    rgb(7, 21, 22),
-    #202427 35px,
-    rgb(128, 128, 128) 35px,
-    rgb(128, 128, 128) 37px ,
-    rgb(3,9,10) 10%,
-    #202427
-  );*/
 .text {
   max-width: 100%; }
 
@@ -520,9 +504,7 @@ body {
   text-align: center;
   margin: 0 auto;
   background: "";
-  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5)); }
-
-.mask a {
+  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
   background-position: -450px 0;
   -webkit-transition: all 0s;
   -moz-transition: all 0s;
@@ -615,7 +597,7 @@ body {
   background-image: url(cbs_crop_blade_shine.png);
   background-size: 100%;
   position: relative;
-  top: 2%;
+  top: 0;
   left: -185%;
   height: 100%;
   width: 2000%;
@@ -635,18 +617,6 @@ body {
   -o-animation-name: shimmer;
   animation-name: shimmer; }
 
-/*.sheath:hover .hideshimmer{
-            @include animation-fill-mode(forwards);
-    @include animation-duration(0.7s);
-    @include animation-delay(.1s);
-    @include animation-name(hideshimmer);
-    }
-    .sheath:hover .shimmer{
-    @include animation-fill-mode(forwards);
-    @include animation-duration(0.7s);
-    @include animation-delay(.1s);
-    @include animation-name(shimmer);
-    }*/
 @media screen and (max-height: 1200px) {
   .textbox {
     margin-top: 50px; }
