@@ -251,7 +251,7 @@ body {
   right: 0;
   left: 0;
   margin: auto;
-  background-image: url(/cbs_crop_blade.png);
+  background-image: url(cbs_crop_blade.png);
   background-size: 100%; }
   .opener:after {
     content: " ";
@@ -260,7 +260,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/cbs_crop_hilt.png);
+    background-image: url(cbs_crop_hilt.png);
     background-repeat: no-repeat;
     background-size: 100%; }
   .opener img {
