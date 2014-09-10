@@ -347,12 +347,12 @@ body {
         text-transform: capitalize;
         font-size: .8em;
     }
-    /*h1, h2, h3, h5 {
-        font-family: bluehighwaybold;
-    }*/
+    h4, p, h5 {
+        font-weight: 100;
+        font-size: 18px;
+    }
     h4 {
         margin: 10px 0;
-        font-weight: 100;
     }
 
     h1 {
@@ -388,17 +388,17 @@ body {
 
 .opener {
     position: relative;
-    top: -150px;
+    top: 30px;
     z-index: 1;
     width: 600px;
     max-width: 70%;
     right: 0;
     left: 0;
     margin: auto;
-    @include animation-fill-mode(forwards);
+    /*@include animation-fill-mode(forwards);
     @include animation-duration(1.8s);
     @include animation-delay(.3s);
-    @include animation-name(topin);
+    @include animation-name(topin);*/
 
     img {
         height: 100%;
@@ -429,7 +429,7 @@ body {
         @include transform(rotate(40deg));
         @include animation-fill-mode(forwards);
         @include animation-duration(1.3s);
-        @include animation-delay(3.2s);
+        @include animation-delay(2.3s);
         @include animation-name(starin);
         -moz-animation-timing-function: linear;
         -o-animation-timing-function: linear;
@@ -500,11 +500,11 @@ body {
 }
 
 .soc-med {
-    opacity: 0;
-    @include animation-fill-mode(forwards);
+    opacity: 1;
+    /*@include animation-fill-mode(forwards);
     @include animation-duration(3s);
     @include animation-delay(4.8s);
-    @include animation-name(fadein);
+    @include animation-name(fadein);*/
     margin-top: 1%;
     padding-bottom: 30px;
 
@@ -588,8 +588,8 @@ body {
         left: 0;
         @include transition(all 1s);
         @include animation-fill-mode(forwards);
-        @include animation-duration(2s);
-        @include animation-delay(5.8s);
+        @include animation-duration(1.7s);
+        @include animation-delay(.9s);
         @include animation-name(open);
     }
 
@@ -636,7 +636,6 @@ body {
         }
 
         p {
-            font-size: 15px;
             margin: 0;
             text-align: left;
             /*                  @include transform(translateX(-100%));  make things offside upon start 
@@ -769,8 +768,8 @@ body {
     width: 5%;
 
     @include animation-fill-mode(forwards);
-    @include animation-duration(0.7s);
-    @include animation-delay(2.3s);
+    @include animation-duration(0.9s);
+    @include animation-delay(.8s);
     @include animation-name(hideshimmer);
 }
 
@@ -783,8 +782,8 @@ body {
     height: 100%;
     width: 2000%;
     @include animation-fill-mode(forwards);
-    @include animation-duration(0.7s);
-    @include animation-delay(2.3s);
+    @include animation-duration(0.9s);
+    @include animation-delay(.8s);
     @include animation-name(shimmer);
 }
 
