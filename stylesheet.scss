@@ -126,96 +126,6 @@
     animation: $key;
 }
 
-@-webkit-keyframes slideout {
-    from {
-        left: -100%;
-    }
-
-    to {
-        left: -15%;
-    }
-}
-
-@-moz-keyframes slideout {
-    from {
-        left: -100%;
-    }
-
-    to {
-        left: -15%;
-    }
-}
-
-@keyframes slideout {
-    from {
-        left: -100%;
-    }
-
-    to {
-        left: -15%;
-    }
-}
-
-@-webkit-keyframes topin {
-    from {
-        top: -150px;
-    }
-
-    to {
-        top: 30px;
-    }
-}
-
-@-moz-keyframes topin {
-    from {
-        top: -150px;
-    }
-
-    to {
-        top: 30px;
-    }
-}
-
-@keyframes topin {
-    from {
-        top: -150px;
-    }
-
-    to {
-        top: 30px;
-    }
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 @-webkit-keyframes hideshimmer {
     from {
         left: -5%;
@@ -326,6 +236,7 @@ body {
     width: 100%;
     color: gray;
     background-color: #020505;
+
     #wrapper {
         min-height: 100%;
         position: relative;
@@ -345,10 +256,12 @@ body {
         text-transform: capitalize;
         font-size: .8em;
     }
+
     h4, p, h5 {
         font-weight: 100;
         font-size: 18px;
     }
+
     h4 {
         margin: 10px 0;
     }
@@ -370,9 +283,10 @@ body {
         cursor: pointer;
         @include transition($faster);
     }
-    i{
-        font-style:normal;
-        color:white;
+
+    i {
+        font-style: normal;
+        color: white;
     }
 }
 
@@ -393,24 +307,13 @@ body {
     top: 30px;
     z-index: 1;
     width: 600px;
-    height:107px;
+    height: 107px;
     max-width: 70%;
     right: 0;
     left: 0;
     margin: auto;
-    background:url(cbs_crop_blade.png) no-repeat;
-    background-size:100%;
-        &:after{
-            content:" ";
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            background:url(cbs_crop_hilt.png) no-repeat;
-            background-repeat: no-repeat;
-            background-size: 100%;
-        }
+    background: url(cbs_blade.png) no-repeat;
+    background-size: 100%;
 
     img {
         height: 100%;
@@ -679,7 +582,7 @@ body {
     background: "";
     -webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
     background-position: -450px 0;
-    
+
 
     img {
         height: 100%;
@@ -692,7 +595,6 @@ body {
 .mask a:hover,
 .mask a:focus {
     background-position: 35px 0;
-    /*change speed to see in slow motion*/
     @include transition(all 1.5s ease-in);
 }
 
@@ -737,7 +639,6 @@ body {
     }
 }
 
-//WEBSITE START
 //TESTING FOR SHINE EFFECT//
 
 
@@ -769,11 +670,18 @@ body {
     @include animation-name(shimmer);
 }
 
-@media screen and ( max-height: 1200px ){
-    .textbox{margin-top: 50px;}
-    .soc-med{margin-top:20px;}
+@media screen and ( max-height: 1200px ) {
+    .textbox {
+        margin-top: 50px;
+    }
+
+    .soc-med {
+        margin-top: 20px;
+    }
 }
 
-@media screen and ( min-height: 1800px ){
-    .textbox{margin-top: 500px;}
+@media screen and ( min-height: 1800px ) {
+    .textbox {
+        margin-top: 500px;
+    }
 }
