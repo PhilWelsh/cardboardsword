@@ -234,6 +234,9 @@ body {
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out; }
+  body i {
+    font-style: normal;
+    color: white; }
 
 .back-dark {
   background-color: rgba(2, 9, 10, 0.95); }
@@ -251,7 +254,7 @@ body {
   right: 0;
   left: 0;
   margin: auto;
-  background-image: url(cbs_crop_blade.png);
+  background: url(cbs_crop_blade.png) no-repeat;
   background-size: 100%; }
   .opener:after {
     content: " ";
@@ -260,7 +263,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(cbs_crop_hilt.png);
+    background: url(cbs_crop_hilt.png) no-repeat;
     background-repeat: no-repeat;
     background-size: 100%; }
   .opener img {
