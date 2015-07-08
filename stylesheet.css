@@ -1,4 +1,4 @@
-﻿/*Copyright©2014 PhilWelsh.*/
+/*Copyright�2014 PhilWelsh.*/
 .sizefull {
   height: 100%;
   width: 100%; }
@@ -364,7 +364,7 @@ body {
     position: absolute;
     content: "";
     background-color: black;
-    height: 52%;
+    //height: 52%;
     width: 100%;
     left: 0;
     -webkit-transition: all 1s;
